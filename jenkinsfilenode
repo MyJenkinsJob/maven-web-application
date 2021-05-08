@@ -1,0 +1,36 @@
+node {
+     
+     def buildNumber = BUILD_NUMBER
+    def mvnHome = tool 'myMaven4'
+    
+    stage ("checkout")  {
+    git credentialsId: 'git-authentication-jenkins-login', url: 'https://github.com/agunuworld4/maven-web-application.git'
+    }
+
+  
+  stage ('build')  {
+    sh "${mvnHome}/bin/mvn clean install "
+    }
+
+   stage ('Slack notification')  {
+        //slackSend(channel:'channel-name', message: "jenkins Job is successfully build, here is the info -  Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+      slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#﻿jenkins-devops-microservices', color: 'good', message: 'jenkins Job is successfully build  jenkins devops microservices', tokenCredentialId: 'slack-authenticaiton-connection'
+      }
+
+   
+      
+
+   stage ('Code coverage')  {
+    jacoco buildOverBuild: true, changeBuildStatus: true, deltaBranchCoverage: '20', deltaClassCoverage: '20', deltaComplexityCoverage: '20', deltaInstructionCoverage: '20', deltaLineCoverage: '20', deltaMethodCoverage: '20', maximumBranchCoverage: '20', maximumClassCoverage: '20', maximumComplexityCoverage: '20', maximumInstructionCoverage: '20', maximumLineCoverage: '20', maximumMethodCoverage: '20', minimumBranchCoverage: '20', minimumClassCoverage: '20', minimumComplexityCoverage: '20', minimumInstructionCoverage: '20', minimumLineCoverage: '20', minimumMethodCoverage: '20', runAlways: true
+   }
+   
+    stage ('Slack notification')  {
+    //slackSend(channel:'channel-name', message: "code analysis passed and successfull, here is the info -  Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+   slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#﻿jenkins-devops-microservices', color: 'good', message: 'code analysis passed and successfulll on  jenkins devops microservices', tokenCredentialId: 'slack-authenticaiton-connection'
+   }
+
+  stage ("Deploy on Tomcat")   {
+      deploy adapters: [tomcat9(credentialsId: 'tomcat-deployment-connection', path: '', url: 'http://35.236.11.250:8090/')], contextPath: 'maven-web-application', war: '**/*.war'
+     }
+
+}
