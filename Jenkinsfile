@@ -4,7 +4,7 @@ node {
 
   stage ('CodeCheckout'){
    echo "pulling changes from the branch ${params.myBranch}"
-   git 'git@github.com:MyJenkinsJob/maven-web-application.git', branch" "${params.myBranch}"
+   git url: 'git@github.com:MyJenkinsJob/maven-web-application', branch" "${params.myBranch}"
   }
 
   stage ('packageApplication'){
