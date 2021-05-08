@@ -9,20 +9,20 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Eghosa Agunu Technology.</h1>
-<h1 align="center">This is the best IT industry centra in the United Of America,in my training centrel its take a month</h1>
+<h1 align="center">EGHOSA AGUNU TECHNOLOGIES HOME PAGE</h1>
+<h1 align="center">GOD ALMIGHTY I HAVE CODING INTERVIEW TOMMOROW HELP ME.AMEN</h1>
 <hr>
 <div style="text-align: center;">
 	<span>
 		<img src="images/mithunlogo.jpg" alt="" width="100">
 	</span>
 	<span style="font-weight: bold;">
-		Mithun Technologies, 
-		Martha Halli, Above ICICI Bank, Beside Meghana Foods,
-		Bangalore.+1-832-438-7775
-		
+		EGHOSA Technologies, 
+		3523 Shadow Bluff CT,Houston,
+		Texas,
+		+8324387775.
 		<br>
-		<a href="mailto:devopstrainingblr@gmail.com">Mail to Mithun Technologies</a>
+		<a href="mailto:devopstrainingblr@gmail.com">Mail to Eghosa Technologies</a>
 	</span>
 </div>
 <hr>

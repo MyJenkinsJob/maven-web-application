@@ -29,13 +29,12 @@ node
     {
      sh "${mavenHome}/bin/mvn sonar:sonar"
     }
-	 
+	 /*
     stage('UploadArtifactIntoNexus')
      {
       sh "${mavenHome}/bin/mvn deploy"
      }
    
-   /*
    stage('DeployAppIntoTomcat')
    {
    
