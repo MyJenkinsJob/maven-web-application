@@ -9,7 +9,7 @@
 </head>
 </head>
 <body>
-<h1 align="center">Eghosa Agunu Home Page</h1>
+<h1 align="center">Eghosa Stagin Home Page</h1>
 <h1 align="center">Giving God Thanks Always</h1>
 <hr>
 <div style="text-align: center;">
