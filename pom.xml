@@ -12,7 +12,7 @@
 	<description>Maven Web Project for Java Project</description>
 
 	<organization>
-		<name>Mithun Technologies</name>
+		<name>Eghosa Agunu Technologies</name>
 		<url>http://mithuntechnologies.com/</url>
 	</organization>
 
@@ -21,9 +21,10 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://34.83.44.183:9000/</sonar.host.url>
-		<sonar.login>admin</sonar.login>
-		<sonar.password>admin12345</sonar.password>
+		<sonar.host.url>http://15.206.159.95:9000/</sonar.host.url>
+		<sonar.login>ac066ffef77f9e2f1028db7b27752ecaa2b2099b</sonar.login>
+		<!--<sonar.login>admin</sonar.login>
+		<sonar.password>admin</sonar.password>  -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -98,13 +99,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://13.235.103.28:8081/repository/flipkart-releases/</url>
+	      <url>http://13.233.238.30:8081/repository/flipkart-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.235.103.28:8081/repository/flipkart-snapshot/</url>
+	      <url>http://13.233.238.30:8081/repository/flipkart-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
