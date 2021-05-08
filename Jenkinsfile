@@ -3,7 +3,8 @@ node {
   def mvnHome = tool name: 'Maven04', type: 'maven'
 
   stage ('CodeCheckout'){
-    checkout([$class: 'GitSCM', branches: [[name: '*/development']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/agunuworld4/maven-web-application']]])
+   echo "pulling changes from the branch ${params.myBranch}"
+   git 'https://github.com/MyJenkinsJob/maven-web-application', branch" "${params.myBranch}"
   }
 
   stage ('packageApplication'){
