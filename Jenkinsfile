@@ -9,6 +9,13 @@ node {
   stage ('packageApplication'){
     sh "${mvnHome}/bin/mvn clean install package"
   }
+
+  stage("build & SonarQube analysis") {
+        withSonarQubeEnv('mySonarQube') {
+        sh "${mvnHome}/bin/mvn sonar:sonar"
+         }
+     }
+
   stage ('AlertEmail'){
   mail bcc: '', body: 'Jenkins checkout and App packaging was succuful', cc: '', from: '', replyTo: '', subject: 'myPipiline Jenkins Notifications', to: 'myckaexam@gmail.com'
   }
@@ -16,4 +23,5 @@ node {
   stage('slackAlert'){
   slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'slackjenkins', color: 'good', message: 'myPipeline deployments', teamDomain: 'EghosaTech', tokenCredentialId: 'slackjenkins05072021'
   }
+
 }
