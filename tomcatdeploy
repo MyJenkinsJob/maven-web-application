@@ -15,7 +15,14 @@ node {
   }
 
   stage ('AlertEmail'){
-  mail bcc: '', body: 'Jenkins checkout and App packaging was succuful', cc: '', from: '', replyTo: '', subject: 'myPipiline Jenkins Notifications', to: 'myckaexam@gmail.com'
+  mail bcc: '', body: 'stageing deployments', cc: '', from: '', replyTo: '', subject: 'staging env', to: 'myckaexam@gmail.com'
+  }
+
+  stage('production'){
+  deploy adapters: [tomcat9(credentialsId: '270d465d-fea1-452e-81ea-9bde6093d930', path: '', url: 'http://35.223.228.147:8090/')], contextPath: '/tomcatproduction', war: '**/*.war'
+  }
+  stage ('AlertEmail'){
+  mail bcc: '', body: 'production deployments', cc: '', from: '', replyTo: '', subject: 'production env', to: 'myckaexam@gmail.com'
   }
 
   stage('slackAlert'){
