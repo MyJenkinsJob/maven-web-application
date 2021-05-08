@@ -4,20 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>MithunTechnologies- Home Page</title>
+<title>EghosaTech- Home Page</title>
 <link href="images/mithunlogo.jpg" rel="icon">
 </head>
 </head>
 <body>
-<h1 align="center">EGHOSA AGUNU TECHNOLOGIES HOME PAGE</h1>
-<h1 align="center">GOD ALMIGHTY I HAVE CODING INTERVIEW TOMMOROW HELP ME.AMEN</h1>
+<h1 align="center">Eghosa Agunu Home Page</h1>
+<h1 align="center">Giving God Thanks Always</h1>
 <hr>
 <div style="text-align: center;">
 	<span>
 		<img src="images/mithunlogo.jpg" alt="" width="100">
 	</span>
 	<span style="font-weight: bold;">
-		EGHOSA Technologies, 
+		EGHOSA Technologies,
 		3523 Shadow Bluff CT,Houston,
 		Texas,
 		+8324387775.
@@ -29,8 +29,8 @@
 	<p> Service : <a href="services/employee/getEmployeeDetails">Get Employee Details </p>
 <hr>
 <hr>
-<p align=center>Mithun Technologies - Consultant, Training, Development Center.</p>
-<p align=center><small>Copyrights 2019 by <a href="http://mithuntechnologies.com/">Mithun Technologies</a> </small></p>
+<p align=center>Eghosa Practice Room</p>
+<p align=center><small>Copyrights 2019 by <a href="http://mithuntechnologies.com/">Eghosa Technologies</a> </small></p>
 
 </body>
 </html>
