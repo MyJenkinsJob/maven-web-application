@@ -4,7 +4,7 @@ node {
   git 'https://github.com/agunuworld4/maven-web-application'
  }
  
- stage ('packageApp'){
+ stage ('packageAppdddd'){
  sh 'mvn clean install'
  }
 }
