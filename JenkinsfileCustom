@@ -1,7 +1,7 @@
 node {
      
      def buildNumber = BUILD_NUMBER
-    def mvnHome = tool 'myMaven4'
+    def mvnHome = tool 'myMaven04'
     
     stage ("checkout")  {
     git credentialsId: 'git-authentication-jenkins-login', url: 'https://github.com/agunuworld4/maven-web-application.git'
