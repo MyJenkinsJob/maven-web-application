@@ -4,7 +4,7 @@ node {
     def mvnHome = tool 'myMaven04'
     
     stage ("checkout")  {
-    git credentialsId: 'git-authentication-jenkins-login', url: 'https://github.com/agunuworld4/maven-web-application.git'
+    git credentialsId: 'git-authentication-jenkins-login', url: 'https://github.com/MyJenkinsJob/maven-web-application.git'
     }
 
   
