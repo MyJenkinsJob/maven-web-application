@@ -15,6 +15,6 @@ node {
    
       
   stage ("Deploy on Tomcat")   {
- deploy adapters: [tomcat9(path: '', url: 'http://34.122.183.146:8080/')], contextPath: 'mavev-web-application', war: '**/*.war'  }
+deploy adapters: [tomcat9(credentialsId: '271bf2db-7bd7-4f1e-b975-ea4b21e40b9b', path: '', url: 'http://34.122.183.146:8080/')], contextPath: 'mavev-web-application', war: '**/*.war' }
 
 }
