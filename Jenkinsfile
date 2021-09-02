@@ -9,6 +9,11 @@ node {
   stage ('packageApplication'){
     sh "${mvnHome}/bin/mvn clean install package"
   }
+  
+  stage ('codeScannar'){
+    sh "${mvnHome}/bin/mvn sonar:sonar"
+  }
+  
   stage ('AlertEmail'){
   mail bcc: '', body: 'Jenkins checkout and App packaging was succuful', cc: '', from: '', replyTo: '', subject: 'myPipiline Jenkins Notifications', to: 'myckaexam@gmail.com'
   }
