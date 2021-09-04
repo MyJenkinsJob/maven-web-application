@@ -9,28 +9,28 @@
 </head>
 </head>
 <body>
-<h1 align="center">EGHOSA AGUNU TECHNOLOGIES HOME PAGE</h1>
-<h1 align="center">GOD ALMIGHTY I HAVE CODING INTERVIEW TOMMOROW HELP ME.AMEN</h1>
+<h1 align="center">Eghosa Agunu Home Page</h1>
+<h1 align="center">I am blessed By my Creator.Thanks Be To God Almighty</h1>
 <hr>
 <div style="text-align: center;">
 	<span>
 		<img src="images/mithunlogo.jpg" alt="" width="100">
 	</span>
 	<span style="font-weight: bold;">
-		EGHOSA Technologies, 
+		Eghosa Tech, 
 		3523 Shadow Bluff CT,Houston,
 		Texas,
 		+8324387775.
 		<br>
-		<a href="mailto:devopstrainingblr@gmail.com">Mail to Eghosa Technologies</a>
+		<a href="mailto:agunu2025@gmail.com">Mail to Eghosa Tech</a>
 	</span>
 </div>
 <hr>
 	<p> Service : <a href="services/employee/getEmployeeDetails">Get Employee Details </p>
 <hr>
 <hr>
-<p align=center>Mithun Technologies - Consultant, Training, Development Center.</p>
-<p align=center><small>Copyrights 2019 by <a href="http://mithuntechnologies.com/">Mithun Technologies</a> </small></p>
+<p align=center>Eghosa Tech - Consultant, Training, Development Center.</p>
+<p align=center><small>Copyrights 2019 by <a href="http://mithuntechnologies.com/">Eghosa Tech</a> </small></p>
 
 </body>
 </html>
