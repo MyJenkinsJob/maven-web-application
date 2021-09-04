@@ -1,6 +1,6 @@
 node {
   
-  def mvnHome = tool name: 'Maven04', type: 'maven'
+  def mvnHome = tool name: 'Maven:3.8.2', type: 'maven'
   
   stage ('CodeCheckout'){
     checkout([$class: 'GitSCM', branches: [[name: '*/development']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/MyJenkinsJob/maven-web-application']]])
