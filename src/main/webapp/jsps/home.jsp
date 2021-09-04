@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1 align="center">Eghosa Agunu Home Page</h1>
-<h1 align="center">I am blessed By my Creator.Thanks Be To God Almighty</h1>
+<h1 align="center">PuLL SCM Trigger Automathically</h1>
 <hr>
 <div style="text-align: center;">
 	<span>
